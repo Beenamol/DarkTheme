@@ -1,10 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { Button, CardActions } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
@@ -25,7 +24,6 @@ const useStyles = makeStyles({
 
 export default function SimpleCard() {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root}>
@@ -35,17 +33,24 @@ export default function SimpleCard() {
           color="textSecondary"
           gutterBottom
         >
-          Verse of the Day
+          <h2>VERSE OF THE DAY</h2>
         </Typography>
         <Typography variant="h5" component="h2">
-          The Lord is my shephered!! <br />
+          The Lord is my shephered; <br /> I shall not want
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
           Psalms 23:1
         </Typography>
+        <a href="https://www.vachanonline.com">vachanonline.com</a>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button
+          size="small"
+          variant="contained"
+          style={{ marginLeft: 40, marginRight: 40 }}
+        >
+          Read
+        </Button>
       </CardActions>
     </Card>
   );
