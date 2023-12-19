@@ -21,4 +21,5 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### Dark Theme POC
 
-
+See the section about [dark theme](https://v4.mui.com/customization/palette/#dark-mode)\
+See the section for how to add dark theme on react [Dark theme video](https://www.youtube.com/watch?v=h4NB_Oc72m0)
