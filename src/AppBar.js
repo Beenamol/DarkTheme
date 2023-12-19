@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonAppBar({ check, change }) {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <AppBar position="static">

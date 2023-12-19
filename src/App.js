@@ -1,9 +1,8 @@
-import { createTheme, ThemeProvider } from "@material-ui/core/styles";
-import { CssBaseline, Paper, Switch } from "@material-ui/core";
-import ButtonAppBar from "./AppBar";
+import { Paper } from "@material-ui/core";
+import "./App.css";
+import ButtonAppBar from "./Appbar";
 import SimpleCard from "./Card";
-import Paper from "@material-ui/core";
-import { height } from "@material-ui/system";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { useState } from "react";
 
 function App() {
@@ -21,7 +20,8 @@ function App() {
             check={darkMode}
             change={() => setDarkMode(!darkMode)}
           />
-          <h1>Dark Mode</h1>
+
+          <h1>Vachan Online</h1>
           <SimpleCard />
         </div>
       </Paper>
