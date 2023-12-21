@@ -1,6 +1,6 @@
 import { Paper } from "@material-ui/core";
 import "./App.css";
-import ButtonAppBar from "./Appbar";
+import ButtonAppBar from "./AppBar";
 import SimpleCard from "./Card";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { useState } from "react";
